@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+}
+.root-container {
+  width: 100%;
+  height: 100%;
+}
+.flex-wrapper {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-wrapper.column {
+  flex-direction: column;
+}
+.flex-wrapper.row {
+  flex-direction: row;
+}
+.flex-wrapper.center {
+  justify-content: center;
+  align-items: space-around;
+  align-content: space-around;
+}
+.battleground-area {
+  background-color: black;
+  flex: 8 0 auto;
+  position: relative;
+}
+.welcome-text-wrapper {
+  text-align: center;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.welcome-text-wrapper .idle-text {
+  color: #44f4c1;
+  display: block;
+  font-family: system-ui;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome-text-wrapper .idle-sub-text {
+  color: #44f4c271;
+  display: block;
+  margin: 10px;
+}
+.control-wrapper {
+  background-color: rgba(150,150,150,255);
+  width: 350px;
+  border-left: 1px solid #44f4c271;
+}
+.coding-area {
+  flex: 20 0 auto;
+}
+.coding-area.hide-separator {
+  border: none;
+}
+.coding-area.show-separator {
+  border: none;
+  border-bottom: 1px solid #44f4c271;
+}
+#console-panel {
+  height: 150px;
+  background-color: black;
+  font-size: 13px;
+  font-family: system-ui;
+  color: #44f4c1;
+  padding: 10px;
+  overflow: auto;
+}
+#console-panel .front {
+  color: #44f4c271;
+}
+#console-panel .cmd, #console-panel .white {
+  color: white;
+}
+#console-panel .error {
+  color: red;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: inherit;
+}
+.show-block {
+  display: block;
+}
+.buttons-area {
+  height: 40px;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0px 2px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+.buttons-area .text-button-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  color: #44f4c1;
+  background-color: black;
+  justify-content: center;
+  font-family: system-ui;
+  border: none;
+  border-bottom: 1px solid #44f4c271;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.buttons-area .text-button-wrapper-no-click {
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  color: #44f4c1;
+  background-color: black;
+  justify-content: center;
+  font-family: system-ui;
+  border: none;
+  border-bottom: 1px solid #44f4c271;
+}
+.buttons-area .text-button-wrapper:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.text-button-wrapper label:hover {
+  cursor: pointer;
+}
+.coding-area {
+  position: relative;
+}
+#code-textarea{
+  border: none;
+  resize: none;
+  outline: none;
+  overflow: auto;
+  width: 100%;
+  background: black;
+  color: #44f4c1;
+  padding: 10px;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  font: 400 15px system-ui;
+}
+#code-textarea::-webkit-input-placeholder {
+  color: #44f4c271;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+#code-textarea::-moz-placeholder {
+  color: #44f4c271;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+#code-textarea:-moz-placeholder {
+  color: #44f4c271;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+#code-textarea:focus::-webkit-input-placeholder { color: transparent; }
+#code-textarea:focus::-moz-placeholder { color: transparent; }
+#code-textarea:focus:-moz-placeholder { color: transparent; }
+
+.battleground-canvas {
+  width: 100%;
+  height: 100%;
+}
+.panel-separator {
+  border: none;
+  border-bottom: 1px solid #44f4c271;
+}

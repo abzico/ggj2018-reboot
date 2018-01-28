@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>GGJ2018 - Reboot</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="root-container flex-wrapper row center">
+      <div class="battleground-area">
+        <canvas id="mainCanvas" class="battleground-canvas hide"></canvas>
+        <div class="welcome-text-wrapper">
+          <label class="idle-text">
+            Welcome to the VERSE
+            <span class="idle-sub-text">
+                System is idle, and waiting for input command.
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="control-wrapper flex-wrapper column center">
+        <div class="buttons-area flex-wrapper row center">
+          <div class="text-button-wrapper-no-click">
+            <label>Verse Terminal 1929</label>
+          </div>
+        </div>
+        <div class="coding-area show-separator">          
+          <textarea spellcheck="false" placeholder="Enter your command here..." class="coding-textbox" onblur="onCodeBlur(event)" onfocus="onCodeFocus(event)" onkeypress="onCodeKeyPress(event)" id="code-textarea"></textarea>
+        </div>
+        <div id="console-panel">
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- commands -->
+  <script type="text/javascript" src="js/cmds/cmd-constants.js"></script>
+  <script type="text/javascript" src="js/cmds/cmd.js"></script>
+  <script type="text/javascript" src="js/cmds/move.js"></script>
+
+  <!-- network -->
+  <script type="text/javascript" src="js/network/networkws-cmd-constants.js"></script>
+  <script type="text/javascript" src="js/network/networkws.js"></script>
+
+  <!-- animation -->
+  <script type="text/javascript" src="js/animation/animation.js"></script>
+  <script type="text/javascript" src="js/animation/animator.js"></script>
+  <script type="text/javascript" src="js/animation/sequence.js"></script>
+
+  <!-- game -->
+  <script type="text/javascript" src="js/game/settings.js"></script>
+  <script type="text/javascript" src="js/game/state-manager.js"></script>
+  <script type="text/javascript" src="js/game/stepper.js"></script>
+  <script type="text/javascript" src="js/canvas/canvas.js"></script>
+
+  <!-- characters -->
+  <script type="text/javascript" src="js/characters/cprototype.js"></script>
+  <script type="text/javascript" src="js/characters/pawn.js"></script>
+
+  <!-- tilemap -->
+  <script type="text/javascript" src="js/tilemap/tile.js"></script>
+  <script type="text/javascript" src="js/tilemap/tilemap.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/terminal.js"></script>
+</html>
